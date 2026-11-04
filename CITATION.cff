@@ -1,0 +1,30 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Practica 3: Modelo y control del sistema
+  musculoesqueletico
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Zaid Alexander
+    family-names: Arredondo Medina
+    email: L23212180@tijuana.tecnm.mx
+    affiliation: TECNM/IT Tijuana
+repository-code: 'https://github.com/Chander98MB/MSFP3'
+keywords:
+  - modelo de Hill
+  - analogía fuerza-voltaje
+  - principio de superposición
+  - controlador PID
+  - atrofia muscular
+  - MATLAB
+  - Simulink
+  - Simscape Electrical
+  - Python
+license: BSD-2-Clause
+version: '1.0'
+date-released: '2026-11-03'
