@@ -102,7 +102,7 @@ El enfoque combina **Ingeniería de Control, Biomecánica y Ciencias de la Compu
 <a id="analogia"></a>
 ## Modelo mecánico y analogía eléctrica
 
-El sistema musculoesquelético se aproxima mediante un modelo viscoelástico basado en los elementos de Hill, el cual incluye un elemento activo $F_0(t)$, un amortiguador viscoso $R$, y compliancias elásticas en serie $C_s$ y paralelo $C_p$.
+El sistema musculoesquelético se aproxima mediante un modelo viscoelástico basado en los elementos de Hill, el cual incluye un elemento activo F0(t), un amortiguador viscoso R, y compliancias elásticas en serie Cs y paralelo Cp.
 
 | Símbolo | Equivalente eléctrico | Interpretación biomecánica / fisiológica |
 |---|---|---|
@@ -138,19 +138,19 @@ Para comprender la correspondencia anatómica y fisiológica del modelo mecánic
 
 ### Correspondencia anatómica y fisiológica de los componentes:
 
-1. **Elemento contráctil activo ($F_0(t)$) — Sarcómeros:**
+1. **Elemento contráctil activo (F0(t)) — Sarcómeros:**
    Representa la fuerza activa generada por el filamento deslizante de actina y miosina dentro de las miofibrillas (sarcómero). Es el componente generador de fuerza dependiente de la activación celular.
 
-2. **Compliancia en serie ($C_s$) — Tendones y aponeurosis:**
+2. **Compliancia en serie (Cs) — Tendones y aponeurosis:**
    Modela las propiedades elásticas de los elementos conectivos dispuestos en serie con las fibras musculares (principalmente el tendón principal, epimisio, perimisio y aponeurosis). Almacena energía elástica durante la contracción.
 
-3. **Compliancia en paralelo ($C_p$) — Sarcolema, fascias y tejido adiposo:**
+3. **Compliancia en paralelo (Cp) — Sarcolema, fascias y tejido adiposo:**
    Representa la elasticidad pasiva de las estructuras que envuelven linealmente al músculo, tales como el sarcolema, el endomisio, las fascias musculares externas y el tejido adiposo circundante.
 
-4. **Amortiguamiento viscoso ($R$) — Tejido blando viscoso y citoplasma:**
+4. **Amortiguamiento viscoso (R) — Tejido blando viscoso y citoplasma:**
    Símbolo de la resistencia viscosa interna ejercida por el sarcoplasma, el fluido intersticial y la fricción entre las capas de tejido blando durante la deformación y el movimiento muscular.
 
-5. **Fuerza total transmitida ($F(t)$) — Unión músculo-hueso (Unión miotendinosa):**
+5. **Fuerza total transmitida (F(t)) — Unión músculo-hueso (Unión miotendinosa):**
    Corresponde a la fuerza resultante transmitida hacia el sistema óseo a través de la inserción miotendinosa para producir la tracción y el movimiento articular.
 
 [Volver al contenido](#contenido)
@@ -162,27 +162,26 @@ Para comprender la correspondencia anatómica y fisiológica del modelo mecánic
 
 ### 1. Aplicación del principio de superposición
 
-Dado que el circuito equivalente contiene múltiples fuentes ($F(t)$ y la fuente dependiente $F_0(t) = \alpha F(t)$), se descompone el análisis en dos circuitos auxiliares:
+Dado que el circuito equivalente contiene múltiples fuentes (F(t) y la fuente dependiente F0(t) = αF(t)), se descompone el análisis en dos circuitos auxiliares:
 
-* **Circuito 1 (Apagando $F_0(t)$):** Analizando la contribución de la fuerza principal sobre el nodo del sistema, se obtiene la respuesta parcial en Laplace:
-  $$
-  F_{s1}(s) = \frac{C_s R s + 1}{R(C_p + C_s)s + 1} F(s)
-  $$
+* **Circuito 1 (Apagando F0(t)):** Analizando la contribución de la fuerza principal sobre el nodo del sistema, se obtiene la respuesta parcial en Laplace:
+  
+  F{s1}(s) = {Cs R s + 1}/{R(Cp + Cs)s + 1} F(s)
+  
 
-* **Circuito 2 (Apagando $F(t)$):** Considerando la acción exclusiva de la fuente activa $-F_0(s) = -\alpha F(s)$ sobre las compliancias equivalentes en paralelo ($C_p + C_s$), la respuesta parcial es:
-  $$
-  F_{s2}(s) = \frac{-\alpha}{R(C_p + C_s)s + 1} F(s)
-  $$
+* **Circuito 2 (Apagando F(t)):** Considerando la acción exclusiva de la fuente activa -F0(s) = -αF(s) sobre las compliancias equivalentes en paralelo (Cp + Cs), la respuesta parcial es:
+  
+  F{s2}(s) = {-α}{R(Cp + Cs)s + 1} F(s)
+  
 
 ### 2. Función de transferencia total
 
-Sumando ambas contribuciones ($F_s(s) = F_{s1}(s) + F_{s2}(s)$), se consolida la función de transferencia del sistema musculoesquelético:
+Sumando ambas contribuciones (Fs(s) = F{s1}(s) + F{s2}(s)), se consolida la función de transferencia del sistema musculoesquelético:
 
-$$
-\boxed{G(s) = \frac{F_s(s)}{F(s)} = \frac{C_s R s + (1 - \alpha)}{R(C_p + C_s)s + 1}}
-$$
+{G(s) = {Fs(s)}/{F(s)} = {Cs R s + (1 - α)}{R(Cp + Cs)s + 1}}
 
-El modelo resultante corresponde a un sistema de **primer orden**, caracterizado por una única constante de tiempo $\tau = R(C_p + C_s)$.
+
+El modelo resultante corresponde a un sistema de **primer orden**, caracterizado por una única constante de tiempo τ = R(Cp + Cs).
 
 [Volver al contenido](#contenido)
 
