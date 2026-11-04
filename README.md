@@ -133,7 +133,7 @@ La atrofia muscular se modela incrementando el valor del amortiguamiento $R$ de 
 
 ### 1. Aplicación del principio de superposición
 
-Dado que el circuito equivalente contiene múltiples fuentes ($F(t)$ y la fuente dependiente $F_0(t) = \alpha F(t)$), se descompone el análisis en dos circuitos auxiliares:
+Dado que el circuito equivalente contiene múltiples fuentes (F(t) y la fuente dependiente F0(t) = αF(t)), se descompone el análisis en dos circuitos auxiliares:
 
 * **Circuito 1 (Apagando $F_0(t)$):** Analizando la contribución de la fuerza principal sobre el nodo del sistema, se obtiene la respuesta parcial en Laplace:
   $$
