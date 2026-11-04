@@ -152,6 +152,8 @@ Para comprender la correspondencia anatómica y fisiológica del modelo mecánic
 
 5. **Fuerza total transmitida (F(t)) — Unión músculo-hueso (Unión miotendinosa):**
    Corresponde a la fuerza resultante transmitida hacia el sistema óseo a través de la inserción miotendinosa para producir la tracción y el movimiento articular.
+   <img width="1030" height="721" alt="image" src="https://github.com/user-attachments/assets/dd520c0c-ff49-4e19-a932-cf8777b80aca" />
+
 
 [Volver al contenido](#contenido)
 
