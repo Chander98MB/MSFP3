@@ -135,25 +135,25 @@ La atrofia muscular se modela incrementando el valor del amortiguamiento $R$ de 
 
 Dado que el circuito equivalente contiene múltiples fuentes (F(t) y la fuente dependiente F0(t) = αF(t)), se descompone el análisis en dos circuitos auxiliares:
 
-* **Circuito 1 (Apagando $F_0(t)$):** Analizando la contribución de la fuerza principal sobre el nodo del sistema, se obtiene la respuesta parcial en Laplace:
-  $$
-  F_{s1}(s) = \frac{C_s R s + 1}{R(C_p + C_s)s + 1} F(s)
-  $$
+* **Circuito 1 (Apagando F0(t)):** Analizando la contribución de la fuerza principal sobre el nodo del sistema, se obtiene la respuesta parcial en Laplace:
+  
+  F{s1}(s) = \frac{C_s R s + 1}{R(C_p + C_s)s + 1} F(s)
+  
 
-* **Circuito 2 (Apagando $F(t)$):** Considerando la acción exclusiva de la fuente activa $-F_0(s) = -\alpha F(s)$ sobre las compliancias equivalentes en paralelo ($C_p + C_s$), la respuesta parcial es:
-  $$
-  F_{s2}(s) = \frac{-\alpha}{R(C_p + C_s)s + 1} F(s)
-  $$
+* **Circuito 2 (Apagando F(t)):** Considerando la acción exclusiva de la fuente activa -F0(s) = -α F(s) sobre las compliancias equivalentes en paralelo (Cp + Cs), la respuesta parcial es:
+  
+  F{s2}(s) = frac{-α}{R(Cp + Cs)s + 1} F(s)
+  
 
 ### 2. Función de transferencia total
 
-Sumando ambas contribuciones ($F_s(s) = F_{s1}(s) + F_{s2}(s)$), se consolida la función de transferencia del sistema musculoesquelético:
+Sumando ambas contribuciones (Fs(s) = F{s1}(s) + F{s2}(s)), se consolida la función de transferencia del sistema musculoesquelético:
 
-$$
-\boxed{G(s) = \frac{F_s(s)}{F(s)} = \frac{C_s R s + (1 - \alpha)}{R(C_p + C_s)s + 1}}
-$$
 
-El modelo resultante corresponde a un sistema de **primer orden**, caracterizado por una única constante de tiempo $\tau = R(C_p + C_s)$.
+\boxed{G(s) = \frac{Fs(s)}{F(s)} = \frac{Cs R s + (1 - alpha)}{R(Cp + Cs)s + 1}}
+
+
+El modelo resultante corresponde a un sistema de **primer orden**, caracterizado por una única constante de tiempo τ = R(Cp + Cs).
 
 [Volver al contenido](#contenido)
 
