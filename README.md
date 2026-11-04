@@ -150,7 +150,7 @@ Dado que el circuito equivalente contiene múltiples fuentes (F(t) y la fuente d
 Sumando ambas contribuciones (Fs(s) = F{s1}(s) + F{s2}(s)), se consolida la función de transferencia del sistema musculoesquelético:
 
 
-G(s) = Fs(s)/F(s) = {Cs R s + (1 - alpha)}/{R(Cp + Cs)s + 1}
+G(s) = Fs(s)/F(s) = {Cs R s + (1 - α)}/{R(Cp + Cs)s + 1}
 
 
 El modelo resultante corresponde a un sistema de **primer orden**, caracterizado por una única constante de tiempo τ = R(Cp + Cs).
