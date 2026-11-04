@@ -137,12 +137,12 @@ Dado que el circuito equivalente contiene múltiples fuentes (F(t) y la fuente d
 
 * **Circuito 1 (Apagando F0(t)):** Analizando la contribución de la fuerza principal sobre el nodo del sistema, se obtiene la respuesta parcial en Laplace:
   
-  F{s1}(s) = \frac{C_s R s + 1}{R(C_p + C_s)s + 1} F(s)
+  F{s1}(s) = {Cs R s + 1}/{R(Cp + Cs)s + 1} F(s)
   
 
 * **Circuito 2 (Apagando F(t)):** Considerando la acción exclusiva de la fuente activa -F0(s) = -α F(s) sobre las compliancias equivalentes en paralelo (Cp + Cs), la respuesta parcial es:
   
-  F{s2}(s) = frac{-α}{R(Cp + Cs)s + 1} F(s)
+  F{s2}(s) = {-α}/{R(Cp + Cs)s + 1} F(s)
   
 
 ### 2. Función de transferencia total
@@ -150,7 +150,7 @@ Dado que el circuito equivalente contiene múltiples fuentes (F(t) y la fuente d
 Sumando ambas contribuciones (Fs(s) = F{s1}(s) + F{s2}(s)), se consolida la función de transferencia del sistema musculoesquelético:
 
 
-\boxed{G(s) = \frac{Fs(s)}{F(s)} = \frac{Cs R s + (1 - alpha)}{R(Cp + Cs)s + 1}}
+G(s) = Fs(s)/F(s) = {Cs R s + (1 - alpha)}/{R(Cp + Cs)s + 1}
 
 
 El modelo resultante corresponde a un sistema de **primer orden**, caracterizado por una única constante de tiempo τ = R(Cp + Cs).
